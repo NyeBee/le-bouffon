@@ -1,7 +1,7 @@
 {
   "name": "le-bouffon",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projet des foufous de la forteresse afin d'apprendre le javascript.\r PS j'apprend tout sur une vidéo de 22h let's gooo.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.23.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NyeBee/le-bouffon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NyeBee/le-bouffon/issues"
+  },
+  "homepage": "https://github.com/NyeBee/le-bouffon#readme",
+  "devDependencies": {}
 }
