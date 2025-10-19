@@ -10,7 +10,7 @@ const commandFolders = fs.readdirSync(foldersPath);
 for (const folder of commandFolders) {
 	const commandsPath = path.join(foldersPath, folder);
 	const commandFiles = fs.readdirSync(commandsPath).filter((file) => file.endsWith('.js'));
-	// Grab the SlashCommandBuilder#toJSON() output of each command's data for deployment
+	// grab SlashCommandBuilder#toJSON() et sort les données pour chaque commande
 	for (const file of commandFiles) {
 		const filePath = path.join(commandsPath, file);
 		const command = require(filePath);
@@ -28,12 +28,12 @@ const rest = new REST().setToken(token);
 	try {
 		console.log(`Rafraîchissement de ${commands.length} applications (/) commandes.`);
 
-		// The put method is used to fully refresh all commands in the guild with the current set
+		// refresh les commandes
 		const data = await rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands });
 
-		console.log(`Succès du rafraîchissement de${data.length} applications (/) commandes.`);
+		console.log(`Succès du rafraîchissement de ${data.length} applications (/) commandes.`);
 	} catch (error) {
-		// And of course, make sure you catch and log any errors!
+		// catch erreurs
 		console.error(error);
 	}
 })();
