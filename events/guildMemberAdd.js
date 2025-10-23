@@ -6,7 +6,7 @@ const path = require('path');
 module.exports = {
     name: 'guildMemberAdd',
     async execute(member, client) {
-        const channel = member.guild.channels.cache.get(client.welcomeChannel);
+        const channel = member.guild.channels.cache.get(client.channelWelcomeId);
         if (!channel) return console.error('Channel de bienvenue introuvable');
 
         const canvas = createCanvas(1024, 500);
