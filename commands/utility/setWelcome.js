@@ -18,7 +18,7 @@ module.exports = {
 
     async execute(interaction, client) {
         // deferReply pour éviter les erreurs de délai
-        if (!interaction.deferred) await interaction.deferReply({ ephemeral: true });
+        if (!interaction.deferred) await interaction.deferReply({ flags: 1 << 6 });
 
         const channel = interaction.options.getChannel('salon');
 

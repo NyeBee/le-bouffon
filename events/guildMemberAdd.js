@@ -52,9 +52,9 @@ module.exports = {
 
         // Appliquer une ombre réaliste
         ctx.shadowColor = 'rgba(0, 0, 0, 0.6)'; // couleur de l’ombre
-        ctx.shadowBlur = 10;                     // diffusion
-        ctx.shadowOffsetX = 2;                   // léger décalage horizontal
-        ctx.shadowOffsetY = 4;                   // décalage vertical
+        ctx.shadowBlur = 10;                      // diffusion
+        ctx.shadowOffsetX = 2;                    // léger décalage horizontal
+        ctx.shadowOffsetY = 4;                    // décalage vertical
 
         // Texte principal "BIENVENUE"
         ctx.font = 'bold 72px "Montserrat"';

@@ -50,9 +50,9 @@ for (const file of eventFiles) {
 }
 
 // ---------- Chargement du salon de notifications si existant ----------
-if (fs.existsSync('./welcomeConfig.json')) {
-    const data = JSON.parse(fs.readFileSync('./welcomeConfig.json', 'utf8'));
-    client.welcomeChannel = data.channelId;
+if (fs.existsSync('./configBot.json')) {
+    const data = JSON.parse(fs.readFileSync('./configBot.json', 'utf8'));
+    client.channelWelcomeId = data.channelWelcomeId;
 }
 
 // Connexion du client
