@@ -9,7 +9,8 @@ const client = new Client({
         GatewayIntentBits.GuildMembers, // pour guildMemberAdd / guildMemberRemove
         GatewayIntentBits.GuildMessages, // pour messageCreate
         GatewayIntentBits.MessageContent, // pour lire le contenu des messages
-        GatewayIntentBits.GuildVoiceStates // pour voiceStateUpdate
+        GatewayIntentBits.GuildVoiceStates, // pour voiceStateUpdate
+        GatewayIntentBits.GuildMemberRoleManager // pour gérer les rôles des membres
     ]
 });
 
